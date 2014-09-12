@@ -1,0 +1,4 @@
+#! /bin/sh
+for photo in photo-*; do
+    convert $photo -resize 512x512 -virtual-pixel background -background "#EAE6D1" -set option:distort:viewport "%[fx:max(w,h)]x%[fx:max(w,h)]-%[fx:max((h-w)/2,0)]-%[fx:max((w-h)/2,0)]" -filter point -distort SRT 0 +repage resized-$photo
+done
