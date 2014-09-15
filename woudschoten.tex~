@@ -102,7 +102,7 @@
 \definecolor{LDblue}{HTML}{4276B6}
 \definecolor{LDyellow}{HTML}{FFCC00}
 \definecolor{LDyellowborder}{HTML}{F0B500}
-\definecolor{LDtextborder}{HTML}{EAE6D1}
+\definecolor{LDtextborder}{HTML}{CBCBCB}
 \pagecolor{LDbackground}
 
 % textbox
@@ -194,20 +194,24 @@
 
 % content
 % 
-\begin{textbox}(siam) at ($(current page.north west)+(3cm,-28cm)$) [below right] <60cm>
+\begin{textbox}(siam) at ($(current page.north west)+(3cm,-28cm)$) [below right] <66cm>
 {}
 \LARGE{
         \begin{itemize}
               \item The first SIAM Student Chapter in The Netherlands
-              \item Promote research
+
+\bigskip
+              \item Advance mathematical applications to engineering/industry
+              \item Promote research in society
               \item Seminars and lectures
+              \item Career opportunities
               \item Social activities
         \end{itemize}
 }
 \end{textbox}
 
-\node at ($(current page.north west)+(95cm,-40cm)$)
-{\animategraphics[autoplay,loop,width=40cm]{0.2}{photos/resized-photo-}{01}{13}};
+\node at ($(current page.north west)+(95cm,-50cm)$)
+{\animategraphics[autoplay,loop,width=40cm]{0.5}{photos/resized-photo-}{01}{13}};
 
 \end{tikzpicture}%
 \end{document}
